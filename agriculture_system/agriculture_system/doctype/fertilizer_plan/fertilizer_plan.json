@@ -1,0 +1,60 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-08-22 20:51:55.541789",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "dose",
+  "fertilizer_type",
+  "quantity",
+  "days",
+  "units_of_measure"
+ ],
+ "fields": [
+  {
+   "fetch_from": "type.fertilizer_name",
+   "fieldname": "fertilizer_type",
+   "fieldtype": "Read Only",
+   "label": "Fertilizer Type"
+  },
+  {
+   "fieldname": "dose",
+   "fieldtype": "Link",
+   "label": "Dose",
+   "options": "Ferilizer Suggestion"
+  },
+  {
+   "fetch_from": "dose.quantity",
+   "fieldname": "quantity",
+   "fieldtype": "Read Only",
+   "label": "Quantity"
+  },
+  {
+   "fetch_from": "dose.days",
+   "fieldname": "days",
+   "fieldtype": "Read Only",
+   "label": "Days"
+  },
+  {
+   "fetch_from": "dose.units_of_measure",
+   "fieldname": "units_of_measure",
+   "fieldtype": "Read Only",
+   "label": "Units of Measure"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_calendar_and_gantt": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-08-22 20:57:18.645398",
+ "modified_by": "Administrator",
+ "module": "Agriculture System",
+ "name": "Fertilizer Plan",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

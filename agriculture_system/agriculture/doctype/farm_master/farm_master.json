@@ -1,0 +1,99 @@
+{
+ "actions": [],
+ "allow_guest_to_view": 1,
+ "allow_rename": 1,
+ "creation": "2024-08-22 18:00:09.989475",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "survey_number",
+  "farm_location",
+  "owners_name",
+  "area_in_acres",
+  "soil_type_blackredgrey",
+  "irrigation_method_riverborewellother",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "survey_number",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Survey number",
+   "reqd": 1
+  },
+  {
+   "fieldname": "farm_location",
+   "fieldtype": "Text",
+   "in_list_view": 1,
+   "label": "Farm location ",
+   "reqd": 1
+  },
+  {
+   "fieldname": "owners_name",
+   "fieldtype": "Text",
+   "in_list_view": 1,
+   "label": "Owner's name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "area_in_acres",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Area in acres",
+   "reqd": 1
+  },
+  {
+   "fieldname": "soil_type_blackredgrey",
+   "fieldtype": "Text",
+   "label": "Soil type (Black/Red/Grey)",
+   "reqd": 1
+  },
+  {
+   "fieldname": "irrigation_method_riverborewellother",
+   "fieldtype": "Text",
+   "label": "Irrigation method (River/Borewell/Other)",
+   "reqd": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Farm Master",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-08-22 18:00:49.075416",
+ "modified_by": "Administrator",
+ "module": "Agriculture",
+ "name": "Farm Master",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "route": "123",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1
+}

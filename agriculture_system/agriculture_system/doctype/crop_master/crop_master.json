@@ -1,0 +1,76 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-08-22 18:33:00.997139",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "crop_name",
+  "crop_variety",
+  "maturity_period_in_days",
+  "ferilizer_suggestion_for_1_acre",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "crop_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Crop name"
+  },
+  {
+   "fieldname": "crop_variety",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Crop variety"
+  },
+  {
+   "fieldname": "maturity_period_in_days",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Maturity Period in Days"
+  },
+  {
+   "fieldname": "ferilizer_suggestion_for_1_acre",
+   "fieldtype": "Table",
+   "label": "Ferilizer Suggestion for 1 Acre",
+   "options": "Ferilizer Suggestion"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Crop Master",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-08-22 19:50:54.071490",
+ "modified_by": "Administrator",
+ "module": "Agriculture System",
+ "name": "Crop Master",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

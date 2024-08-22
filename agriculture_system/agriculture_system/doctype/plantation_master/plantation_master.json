@@ -1,0 +1,152 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-08-22 19:55:35.872524",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "farmer_survey_no",
+  "farmer_details_section",
+  "farmer_name",
+  "villege",
+  "dist",
+  "farm_area_in_acres",
+  "crop_plan",
+  "crop_name",
+  "crop_variety",
+  "maturity_period_in_days",
+  "plantation_date",
+  "water_type",
+  "amended_from",
+  "soil_type",
+  "fertilizer_calculation",
+  "fertilizer_plan"
+ ],
+ "fields": [
+  {
+   "fieldname": "farmer_survey_no",
+   "fieldtype": "Link",
+   "label": "Farmer Survey No",
+   "options": "Farm Master"
+  },
+  {
+   "fieldname": "farmer_details_section",
+   "fieldtype": "Section Break",
+   "label": "Farmer Details"
+  },
+  {
+   "fetch_from": "farmer_survey_no.owners_name",
+   "fieldname": "farmer_name",
+   "fieldtype": "Read Only",
+   "label": "Farmer Name"
+  },
+  {
+   "fieldname": "crop_plan",
+   "fieldtype": "Link",
+   "label": "Crop Plan ",
+   "options": "Crop Master"
+  },
+  {
+   "fetch_from": "crop_plan.crop_name",
+   "fieldname": "crop_name",
+   "fieldtype": "Read Only",
+   "label": "Crop Name"
+  },
+  {
+   "fieldname": "plantation_date",
+   "fieldtype": "Date",
+   "label": "Plantation Date"
+  },
+  {
+   "fieldname": "water_type",
+   "fieldtype": "Select",
+   "label": "Water Type ",
+   "options": "Ground Water\nSurface Water\nRain Water\nOther",
+   "sort_options": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Plantation Master",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fetch_from": "farmer_survey_no.farm_location",
+   "fieldname": "villege",
+   "fieldtype": "Read Only",
+   "label": "Villege"
+  },
+  {
+   "fetch_from": "farmer_survey_no.farm_location",
+   "fieldname": "dist",
+   "fieldtype": "Read Only",
+   "label": "Dist "
+  },
+  {
+   "fetch_from": "farmer_survey_no.area_in_acres",
+   "fieldname": "farm_area_in_acres",
+   "fieldtype": "Read Only",
+   "label": "Farm Area in Acres "
+  },
+  {
+   "fieldname": "soil_type",
+   "fieldtype": "Data",
+   "label": "Soil Type "
+  },
+  {
+   "fetch_from": "crop_plan.crop_variety",
+   "fieldname": "crop_variety",
+   "fieldtype": "Read Only",
+   "label": "Crop Variety"
+  },
+  {
+   "fetch_from": "crop_plan.maturity_period_in_days",
+   "fieldname": "maturity_period_in_days",
+   "fieldtype": "Read Only",
+   "label": "Maturity Period in Days "
+  },
+  {
+   "fieldname": "fertilizer_calculation",
+   "fieldtype": "Table",
+   "label": "Fertilizer Calculation ",
+   "options": "Fertilizer Calculation"
+  },
+  {
+   "fieldname": "fertilizer_plan",
+   "fieldtype": "Table",
+   "label": "Fertilizer Plan",
+   "options": "Fertilizer Plan"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-08-22 20:57:54.106742",
+ "modified_by": "Administrator",
+ "module": "Agriculture System",
+ "name": "Plantation Master",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
